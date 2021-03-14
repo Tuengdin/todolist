@@ -5,4 +5,6 @@
 </ul>	
 <br>
 
-<b>Tasks: </b><input type="text" onfocus="this.value=''" [(ngModel)]="task"><button (click)= "addTask()">Add</button> 
+<b>Tasks: </b><input type="text" onfocus="this.value=''" [(ngModel)]="task"><button (click)= "addTask()">Add</button> <button type="submit" [disabled]="!form.form.valid">
+	Save
+</button>
